@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: green;
+  height: 100%;
+}
+.way {
+  width: 700px;
+  height: 123456789123456789rem;
+  background-color: darkgrey;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  right: 5rem;
+}
+.animation {
+  animation: car linear 25s infinite both;
+}
+@keyframes car {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10000px);
+  }
+}
+
+.line {
+  height: 123456789123456789rem;
+  width: -1px;
+  position: absolute;
+  bottom: 0;
+  left: 22rem;
+  right: 22rem;
+  border: 20px dashed white;
+}
+.car {
+  position: absolute;
+  top: 10rem;
+  left: 25rem;
+  right: 25rem;
+}
+img {
+  transform: scale(0.5);
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  z-index: 12;
+}
+::-webkit-scrollbar {
+  background-color: green;
+  width: 0px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.rul {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 14rem;
+  justify-content: space-evenly;
+  width: 200px;
+  margin-top: 1rem;
+}
+.ss {
+  margin-top: 20%;
+}
+button {
+  width: 75px;
+  height: 30px;
+  padding: 0.1rem;
+}
+.turnleft {
+  transform: translateX(360px);
+}
